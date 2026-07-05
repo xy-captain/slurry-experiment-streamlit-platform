@@ -6,6 +6,12 @@ from pyDOE import fracfact
 from itertools import product
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
+# 对pyDOE做异常捕获兜底，避免整页崩溃
+try:
+    from pyDOE import fracfact
+except ModuleNotFoundError:
+    st.warning("正交试验依赖库pyDOE安装失败，正交/全因子试验设计功能暂时无法使用，其余数据处理功能正常")
+    fracfact = None
 
 # ===================== 页面全局配置 =====================
 st.set_page_config(
