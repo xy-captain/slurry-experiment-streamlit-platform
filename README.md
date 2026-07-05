@@ -11,7 +11,7 @@ pyDOE（正交试验生成）
 statsmodels（方差ANOVA分析）
 
 ## 目录结构
-├── app.py # Web 平台主程序
+├── data_analysis.py # Web 平台主程序
 ├── requirements.txt # 项目依赖清单
 ├── .gitignore # 屏蔽本地实验数据、虚拟环境
 └── README.md # 项目说明
