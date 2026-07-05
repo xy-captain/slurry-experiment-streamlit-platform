@@ -2,5 +2,5 @@ streamlit
 pandas
 numpy
 openpyxl
-pyDOE
+pyDOE==0.3.8
 statsmodels
